@@ -120,7 +120,7 @@
 
 
     <div class="col-md-3 users-right">
-        <h3>Profiles</h3>
+      <h3>Profiles</h3>
       <div class="card">
         <div class="card-body">
           <hr>
@@ -134,6 +134,7 @@
               <img src="https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1" class="rounded img-fluid" alt=""  width="75px" height="75px">
             {% endif %}
             <p  class="profile-username" style="float:right;">  <a href="{% url 'profile' profile.username.id %}">{{profile.username}}</a></p>
+            <button class="btn btn-primary" value='{{user.id}}'>Follow</button>
             
             
 
